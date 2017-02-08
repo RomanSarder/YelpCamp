@@ -3,8 +3,9 @@ var express    = require('express'),
     bodyParser = require('body-parser'),
     mongoose   = require('mongoose'),
     Campground = require('./models/campground');
+    seedDB     = require('./seeds');
 
-
+seedDB();
 mongoose.connect('mongodb://localhost/yelp_camp');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
