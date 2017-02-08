@@ -6,17 +6,17 @@ var data = [
 	{
 		name: "Cloud's Rest",
 		image: "https://farm6.staticflickr.com/5181/5641024448_04fefbb64d.jpg",
-		description: "blah blah blah"
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida id velit quis lacinia. Maecenas venenatis nunc nec dolor dictum, non facilisis nisl sollicitudin. In sed posuere ipsum. Aenean in dictum ligula. Donec mattis turpis sit amet fringilla facilisis. Sed dictum est purus, vitae bibendum nisi malesuada at. Maecenas risus augue, euismod eu mi sed, tristique mollis odio. Sed vestibulum dui sed elit ultrices, ac elementum dui laoreet. Nunc et aliquet lacus. Aenean posuere blandit nulla et aliquet. Proin aliquet lobortis urna, eu tincidunt nisl venenatis id. Etiam quis pharetra enim. Aliquam vitae turpis non magna cursus gravida. Sed egestas placerat ligula, condimentum sollicitudin purus finibus nec."
 	},
 	{
 		name: "Desert Mesa",
 		image: "https://farm4.staticflickr.com/3872/14435096036_39db8f04bc.jpg",
-		description: "blah blah blah"
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida id velit quis lacinia. Maecenas venenatis nunc nec dolor dictum, non facilisis nisl sollicitudin. In sed posuere ipsum. Aenean in dictum ligula. Donec mattis turpis sit amet fringilla facilisis. Sed dictum est purus, vitae bibendum nisi malesuada at. Maecenas risus augue, euismod eu mi sed, tristique mollis odio. Sed vestibulum dui sed elit ultrices, ac elementum dui laoreet. Nunc et aliquet lacus. Aenean posuere blandit nulla et aliquet. Proin aliquet lobortis urna, eu tincidunt nisl venenatis id. Etiam quis pharetra enim. Aliquam vitae turpis non magna cursus gravida. Sed egestas placerat ligula, condimentum sollicitudin purus finibus nec."
 	},
 	{
 		name: "Canyon Floor",
 		image: "https://farm8.staticflickr.com/7258/7121861565_3f4957acb1.jpg",
-		description: "blah blah blah"
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida id velit quis lacinia. Maecenas venenatis nunc nec dolor dictum, non facilisis nisl sollicitudin. In sed posuere ipsum. Aenean in dictum ligula. Donec mattis turpis sit amet fringilla facilisis. Sed dictum est purus, vitae bibendum nisi malesuada at. Maecenas risus augue, euismod eu mi sed, tristique mollis odio. Sed vestibulum dui sed elit ultrices, ac elementum dui laoreet. Nunc et aliquet lacus. Aenean posuere blandit nulla et aliquet. Proin aliquet lobortis urna, eu tincidunt nisl venenatis id. Etiam quis pharetra enim. Aliquam vitae turpis non magna cursus gravida. Sed egestas placerat ligula, condimentum sollicitudin purus finibus nec."
 	}
 ];
 function seedDB() {
