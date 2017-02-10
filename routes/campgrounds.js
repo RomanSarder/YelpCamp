@@ -54,6 +54,7 @@ router.get('/:id', function(req,res) {
 router.get('/:id/edit', middleware.isLoggedIn, middleware.checkAuth, function(req,res) {
 	Campground.findById(req.params.id, function(err, found) {
 		if(err) {
+			req.flash('error', 'Campground not found');
 			res.redirect('/campgrounds');
 		} else {
 			res.render('campgrounds/edit', {campground: found});
@@ -65,6 +66,7 @@ router.get('/:id/edit', middleware.isLoggedIn, middleware.checkAuth, function(re
 router.put("/:id", middleware.isLoggedIn, middleware.checkAuth, function(req, res){
     Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(err, updatedCampground){
       if(err){
+      	  req.flash('error', 'Campground not found');
           res.redirect("/campgrounds");
       } else {
           res.redirect("/campgrounds/" + req.params.id);
