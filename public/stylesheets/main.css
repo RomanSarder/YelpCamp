@@ -9,3 +9,21 @@
 .thumbnail .caption-full {
 	padding: 9px;
 }
+
+#delete-form {
+	display: inline;
+}
+
+.form-title {
+	text-align: center;
+}
+
+.wrapper {
+	width:30%; 
+	margin: 25px auto;
+}
+
+.row.text-center {
+	display: flex;
+	flex-wrap: wrap;
+}
