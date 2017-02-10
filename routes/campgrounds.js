@@ -2,6 +2,7 @@ var express = require("express");
 var router  = express.Router();
 var Campground = require("../models/campground");
 
+// INDEX ROUTE
 router.get('/', function(req,res) {
 	Campground.find({}, function(err,camps) {
 		if (err) {
@@ -12,10 +13,12 @@ router.get('/', function(req,res) {
 	}); 
 });
 
+// NEW ROUTE
 router.get('/new', isLoggedIn, function(req,res) {
 	res.render('campgrounds/new');
 });
 
+//CREATE ROUTE
 router.post('/', isLoggedIn, function(req,res) {
 	var name = req.body.name;
 	var image = req.body.image;
@@ -35,6 +38,7 @@ router.post('/', isLoggedIn, function(req,res) {
 	});
 });
 
+//SHOW ROUTE
 router.get('/:id', function(req,res) {
 	Campground.findById(req.params.id).populate('comments').exec(function(err, found) {
 		if(err) {
@@ -45,6 +49,7 @@ router.get('/:id', function(req,res) {
 	});
 });
 
+//MIDDLEWARE
 function isLoggedIn(req,res,next) {
 	if(req.isAuthenticated()) {
 		return next();

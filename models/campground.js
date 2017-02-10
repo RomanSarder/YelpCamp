@@ -5,6 +5,7 @@ var campgroundSchema = new mongoose.Schema({
 	image: String,
 	description: String,
 	author: {
+		//Inserting reference to User.Schema
 		id : {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User'
