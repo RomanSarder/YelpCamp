@@ -41,6 +41,9 @@
 							<%= comment.text %>
 						</p>
 						<a class="btn btn-xs btn-warning" href="/campgrounds/<%= camp._id %>/comments/<%= comment._id %>/edit">Edit</a>
+						<form id="delete-form" action="/campgrounds/<%= camp._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+							<button class="btn btn-xs btn-danger">Delete</button>
+						</form>
 					</div>
 				</div>
 				
