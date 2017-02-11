@@ -1,5 +1,6 @@
 .thumbnail img {
 	width: 100%;
+	min-height: 200px;
 }
 
 .thumbnail {
@@ -26,4 +27,8 @@
 .row.text-center {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+span.glyphicon.glyphicon-tent {
+	top: 4px;
 }

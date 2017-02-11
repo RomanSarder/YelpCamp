@@ -6,8 +6,11 @@ body {
 	z-index: 1;
 	position: relative;
 	text-align: center;
-	padding-top: 40vh;
+	padding-top: 35vh;
 	color: #fff;
+}
+#landing-header h1 {
+  font-size: 3em;
 }
 
 .slideshow { 
