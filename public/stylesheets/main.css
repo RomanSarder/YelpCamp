@@ -32,3 +32,11 @@
 span.glyphicon.glyphicon-tent {
 	top: 4px;
 }
+
+.navbar-default .navbar-nav>li>a {
+	transition: color 0.5s;
+}
+
+.btn-primary {
+	border: none;
+}
